@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 0 2px 4px 3px rgba(0,0,0,0.2);
+}
+
+nav{
+    width: 100%;
+    background-color: #2d2d4c;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    width: 70%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 14px 0;
+}
+
+nav ul li a{
+    font-size: 17px;
+    color: #ffffff; text-decoration: none; text-align: center;
+    padding: 14px 16px;
+}
+
+nav ul li a:hover{
+ background-color: #ddd;
+    color: #000;
+}
+
+/* target small screens */
+
+[class*="column-"]{
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+}
+@media only screen and (max-width: 768px) {
+    .container nav ul li {
+        padding: 14px 0;
+    }
+
+    .container nav ul li a{
+        font-size: 13px;
+        padding: 14px 6px;
+    }
+
+    .container{
+        width: 98%;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){ /* tablets */
+    .container nav ul li a{
+        font-size: 15px;
+        padding: 14px 10px;
+    }
+        .column-md-1{width: 8.33%;}
+        .column-md-2{width: 16.66%;}
+        .column-md-3{width: 25%;}
+        .column-md-4{width: 33.33%;}
+        .column-md-5{width: 41.66%;}
+        .column-md-6{width: 50%;}
+        .column-md-7{width: 58.33%;}
+        .column-md-8{width: 66.66%;}
+        .column-md-9{width: 75%;}
+        .column-md-10{width: 83.33%;}
+        .column-md-11{width: 91.66%;}
+        .column-md-12{width: 100%;}
+    }
+
+@media screen and (min-device-width: 1024px){
+.column-lg-1{width: 8.33%;}
+.column-lg-2{width: 16.66%;}
+.column-lg-3{width: 25%;}
+.column-lg-4{width: 33.33%;}
+.column-lg-5{width: 41.66%;}
+.column-lg-6{width: 50%;}
+.column-lg-7{width: 58.33%;}
+.column-lg-8{width: 66.66%;}
+.column-lg-9{width: 75%;}
+.column-lg-10{width: 83.33%;}
+.column-lg-11{width: 91.66%;}
+.column-lg-12{width: 100%;}
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section{
+    background-color: #eeeeee;
+}
+
+img{
+    width: 100%;
+
+}
+
+p{
+    text-align: justify;
+}
+footer{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 0 2px 4px 3px rgba(128,128,128,0.2);
+}
+
+footer nav{
+    height: 40px;
+    background-color: #006B9C;
+    padding: 10px 15px;
+    color: white;
+}
